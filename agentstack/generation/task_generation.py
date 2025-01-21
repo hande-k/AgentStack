@@ -1,10 +1,9 @@
 from typing import Optional
-from pathlib import Path
 from agentstack import log
 from agentstack.exceptions import ValidationError
 from agentstack import frameworks
 from agentstack.utils import verify_agentstack_project
-from agentstack.tasks import TaskConfig, TASKS_FILENAME
+from agentstack.tasks import TaskConfig
 
 
 def add_task(

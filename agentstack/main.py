@@ -13,7 +13,7 @@ from agentstack.cli import (
     export_template,
 )
 from agentstack.telemetry import track_cli_command, update_telemetry
-from agentstack.utils import get_version, term_color
+from agentstack.utils import get_version
 from agentstack import generation
 from agentstack.update import check_for_updates
 

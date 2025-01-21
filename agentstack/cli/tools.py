@@ -1,5 +1,4 @@
 from typing import Optional
-import itertools
 import inquirer
 from agentstack.utils import term_color
 from agentstack import generation

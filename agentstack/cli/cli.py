@@ -1,6 +1,5 @@
 from typing import Optional
 import os
-import sys
 import time
 from datetime import datetime
 
@@ -25,7 +24,7 @@ from agentstack import generation
 from agentstack import inputs
 from agentstack.agents import get_all_agents
 from agentstack.tasks import get_all_tasks
-from agentstack.utils import open_json_file, term_color, is_snake_case, get_framework, validator_not_empty
+from agentstack.utils import open_json_file, is_snake_case, get_framework, validator_not_empty
 from agentstack.proj_templates import TemplateConfig
 from agentstack.exceptions import ValidationError
 

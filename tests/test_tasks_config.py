@@ -1,8 +1,6 @@
-import json
-import os, sys
+import os
 import shutil
 import unittest
-import importlib.resources
 from pathlib import Path
 from agentstack import conf
 from agentstack.tasks import TaskConfig, TASKS_FILENAME, get_all_task_names, get_all_tasks

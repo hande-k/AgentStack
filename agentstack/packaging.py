@@ -1,5 +1,6 @@
-import os, sys
-from typing import Optional, Callable
+import os
+import sys
+from typing import Callable
 from pathlib import Path
 import re
 import subprocess

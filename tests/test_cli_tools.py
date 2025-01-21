@@ -1,5 +1,4 @@
-import subprocess
-import os, sys
+import os
 import unittest
 from parameterized import parameterized
 from pathlib import Path

@@ -1,8 +1,6 @@
-import json
-import os, sys
+import os
 import shutil
 import unittest
-import importlib.resources
 from pathlib import Path
 from agentstack import conf
 from agentstack.agents import AgentConfig, AGENTS_FILENAME, get_all_agent_names, get_all_agents

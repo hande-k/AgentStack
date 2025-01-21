@@ -1,11 +1,12 @@
 import json
-import os, sys
+import os
+import sys
 import time
 from pathlib import Path
 from packaging.version import parse as parse_version, Version
 import inquirer
 from agentstack import log
-from agentstack.utils import term_color, get_version, get_framework
+from agentstack.utils import get_version, get_framework
 from agentstack import packaging
 from appdirs import user_data_dir
 
@@ -54,7 +55,7 @@ def get_latest_version(package: str) -> Version:
         f"{ENDPOINT_URL}/{package}/", headers={"Accept": "application/vnd.pypi.simple.v1+json"}
     )
     if response.status_code != 200:
-        raise Exception(f"Failed to fetch package data from pypi.")
+        raise Exception("Failed to fetch package data from pypi.")
     data = response.json()
     return parse_version(data['versions'][-1])
 

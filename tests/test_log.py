@@ -1,11 +1,8 @@
 import unittest
-import sys
 import io
-import logging
 import shutil
 from pathlib import Path
 from agentstack import log, conf
-from agentstack.log import SUCCESS, NOTIFY
 
 BASE_PATH = Path(__file__).parent
 

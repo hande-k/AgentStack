@@ -1,4 +1,5 @@
-import os, sys
+import os
+import sys
 import subprocess
 
 CLI_ENTRY = [

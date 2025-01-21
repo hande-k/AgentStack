@@ -1,11 +1,10 @@
-import sys
 from typing import Optional
 from agentstack import log
 from agentstack.exceptions import ValidationError
 from agentstack.conf import ConfigFile
 from agentstack import frameworks
 from agentstack.utils import verify_agentstack_project
-from agentstack.agents import AgentConfig, AGENTS_FILENAME
+from agentstack.agents import AgentConfig
 
 
 def add_agent(

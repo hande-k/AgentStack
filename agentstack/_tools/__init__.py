@@ -88,7 +88,7 @@ class ToolConfig(pydantic.BaseModel):
             _module = import_module(self.module_name)
             assert isinstance(_module, self.type)
             return _module
-        except AssertionError as e:
+        except AssertionError:
             raise ValidationError(
                 f"Tool module `{self.module_name}` does not match the expected implementation. \n"
                 f"The tool's config.json file lists the following public methods: `{'`, `'.join(self.tools)}` "

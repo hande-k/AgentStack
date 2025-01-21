@@ -1,6 +1,5 @@
-import os, sys
+import os
 import unittest
-from parameterized import parameterized
 from pathlib import Path
 import shutil
 from cli_test_utils import run_cli

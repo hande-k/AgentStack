@@ -13,7 +13,7 @@ from inquirer import errors as inquirer_errors
 def get_version(package: str = 'agentstack'):
     try:
         return version(package)
-    except (KeyError, FileNotFoundError) as e:
+    except (KeyError, FileNotFoundError):
         return "Unknown version"
 
 

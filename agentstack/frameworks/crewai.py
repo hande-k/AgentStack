@@ -193,7 +193,7 @@ class CrewFile(asttools.File):
         existing_elts: list[ast.expr] = existing_node.elts
 
         new_tool_nodes: list[ast.expr] = []
-        if not tool.name in self.get_agent_tool_names(agent_name):
+        if tool.name not in self.get_agent_tool_names(agent_name):
             # we need to create a node that looks like:
             #   `*agentstack.tools['tool_name']`
             # we always get a list of callables from the `agentstack.tools` module,

@@ -9,7 +9,7 @@ from agentstack import conf, log
 from agentstack.exceptions import ValidationError
 from agentstack import inputs
 from agentstack import frameworks
-from agentstack.utils import term_color, get_framework, verify_agentstack_project
+from agentstack.utils import verify_agentstack_project
 
 MAIN_FILENAME: Path = Path("src/main.py")
 MAIN_MODULE_NAME = "main"

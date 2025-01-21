@@ -1,11 +1,10 @@
-import os, sys
+import os
+import sys
 from typing import Optional
-from pathlib import Path
 from agentstack import conf, log
 from agentstack.exceptions import EnvironmentError
 from agentstack import packaging
 from agentstack.cli import welcome_message, init_project_builder
-from agentstack.utils import term_color
 
 
 # TODO move the rest of the CLI init tooling into this file
