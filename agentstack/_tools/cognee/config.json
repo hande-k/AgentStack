@@ -49,7 +49,7 @@
   
     "packages": [
         "cognee",
-        "'cognee[postgres']'"
+        "cognee -E postgres"
     ],
     "post_install": "Now, you can start cognifying!",
     "post_remove": "Cognee is removed!"
