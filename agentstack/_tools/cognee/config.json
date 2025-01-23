@@ -48,7 +48,8 @@
     },
   
     "packages": [
-        "cognee"
+        "cognee",
+        "cognee[postgres]"
     ],
     "post_install": "Now, you can start cognifying!",
     "post_remove": "Cognee is removed!"
