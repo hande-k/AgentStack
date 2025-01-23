@@ -8,7 +8,7 @@
         "search_insights"
     ],
     "url": "https://github.com/topoteretes/cognee",
-    "tools_bundled": true,
+    "tools_bundled": false,
     "cta": "Cognee installed! Please set your cognee env variables.",
   
     "env": {
