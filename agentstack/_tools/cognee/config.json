@@ -48,8 +48,8 @@
     },
   
     "packages": [
-        "cognee",
-        "cognee -E postgres"
+        "cognee>=0.1.22",
+        "cognee[postgres, neo4j]"
     ],
     "post_install": "Now, you can start cognifying!",
     "post_remove": "Cognee is removed!"
