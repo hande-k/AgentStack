@@ -62,3 +62,22 @@ def search_insights(query_text: str) -> str:
         return str(results)
     
     return asyncio.run(_search())
+
+async def rag_search(self, query: str) -> list:
+    """Answer query based on data chunk most relevant to query.
+    Args:
+        query (str): The query string.
+    """
+    user = await cognee.modules.users.methods.get_default_user()
+    return await cognee.search(
+        cognee.api.v1.search.SearchType.COMPLETION, query, user
+    )
+async def search_graph(self, query: str) -> list:
+    """Search the graph for relevant information based on a query.
+    Args:
+        query (str): The query string to match against data from the graph.
+    """
+    user = await cognee.modules.users.methods.get_default_user()
+    return await cognee.search(
+        cognee.api.v1.search.SearchType.GRAPH_COMPLETION, query, user
+    )
